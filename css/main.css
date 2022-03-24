@@ -1,0 +1,105 @@
+:root {
+    --azul: #012E40;
+    --preta: #141414;
+    --dourado: #F28705;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'naruto';
+    src: url('../fontes/njnaruto.ttf') format('truetype');
+}
+
+body {
+    background: var(--preta);
+    color: white;
+    font-family: sans-serif;
+}
+
+header .logo {
+    margin-left: 10px;
+    color: var(--dourado);
+    font-size: 50px;
+    font-family: naruto;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.anime-principal {
+    font-size: 20px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url(../img/fma.jpg);
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.anime-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.anime-principal .container {
+    width: 70%;
+}
+
+.box-anime {
+    height: 400px;
+    width: 400px;
+    display: block;
+}
+
+.animes-carousel {
+    margin-top: 5px;
+}
